@@ -1,0 +1,73 @@
+Tips And Tricks
+
+== Leverage external microservices/APIs
+Get into the mindset of consuming APIs that you have no control or knowledge of regarding their implementation. Become familiar with using external microservices before starting with microservices yourself, with your existing apps.
+
++ == Align dev/test/stage/QA/production environments 
+Make all of your environments absolutely identical; you will avoid a lot of problems. This applies to microservices and non-microservices environments.
+
+== Steward APIs 
+Build and maintain client libraries for access to the microservices API. If not, the construction of these libraries is left to third parties, resulting in fragmentation when implementers incorrectly interpret the spec or do not fully comprehend the logic of how it’s called
+
++ == Be prepared to retain backward compatibility forever 
+It’s common to deploy new microservices side by side with old versions (which can be eventually removed). However, there are cases where devices out in the field cannot be patched or updated. In these situations, backwards compatibility must be retained.
+
+== Fail fast, recover quickly 
+There are always going to be failures: embrace and encourage them. If get into the process of breaking as many components as possible, even while in production, you will necessarily develop recovery processes ensuring the ensuing systems will become more resistant to failure.
+
+== Identify synchronous vs. asynchronous services 
+Identify how the calls need to be made early, so that you can develop for them and minimize impact on performance.
+
+== Minimize synchronicity 
+It’s difficult to optimize for efficiency and performance if there are a number of blocked services due to synchronicity. Build systems around this to deal with it in real-time.
+- email submission
+- order submission
+
++ == Step away from the infrastructure
+Don’t tie yourself to the infrastructure. It shouldn’t matter to development teams what the underlying infrastructure is.
+
+== Monitor from day one 
+Start monitoring from the first line of code, then you don’t have to deal with it at the end where there will be other pressures.
+
++ == Automate from day one 
+In order to build resilience and get teams moving fast, you need to automate the release process. Otherwise, you’re not going to achieve several releases a day or get code flowing freely through continuous integration pipelines.
+
+
+
+
+
+microservices.io
+
+
+
+
+
+
+Single Instance Per Host
+ - isolated
+ - constrained resources
+Single Instance Per VM
+ - packaged with everything
+Single Instance Per Container
+Multiple Service Instances Per Host
+ - cost-efficient
+ - use domains
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
