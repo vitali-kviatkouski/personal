@@ -1,0 +1,38 @@
+Monitoring key points
+
+== Maintenance
+
+Deployment
+	- Automation
+	
+Maintenance
+	- Developers perform support
+	- Monitoring
+		- Splunk
+
+		
+Design for Failure
+ - Detect
+	- Monitoring
+		- real time
+	- Extensive Logging
+ - Overcoming
+	- Monitoring
+	- High Availability
+		Load-balancing
+
+- Evolutionary Design
+	- Eating out RLNK features
+		
+Fawler
+http://martinfowler.com/articles/microservices.html
+http://habrahabr.ru/post/249183/
+
++- Business Capabilities | Организация вокруг потребностей бизнеса
++- Decentralized Governance | Децентрализованное управление
+	- own tech stack
+		- we still have notion of platform
++- Decentralized Data Management | Децентрализованное управление данными
++- Infrastructure Automation | Автоматизация инфраструктуры
+- Design for failure | Проектирование под отказ
+- Evolutionary Design | Эволюционный дизайн
