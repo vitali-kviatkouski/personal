@@ -1,0 +1,13 @@
+VMWare VMWare VMWare
+VirtualBox VirtualBox VirtualBox VirtualBox VirtualBox
+HyperV HyperV HyperV HyperV
+Xen Xen Xen Xen
+Paravirtualization
+VTx
+Docker Docker Docker Docker 
+KVM KVM KVM
+LXC LXC
+Containers
+ESXi
+Hypervisor Hypervisor
+AmazonEC2
