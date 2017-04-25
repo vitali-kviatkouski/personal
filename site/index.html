@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="yandex-verification" content="f37f468088c6e01a" />
+<meta name="description" content="Широкий выбор обоев в Витебске на Замковой" />
+<meta name="keywords" content="обои, витебск, недорогие, дешевые, замковая, пленка, самоклеящаяся, фотообои, клей, клея, купить, глобус, цена, магазин" />
+<title>Магазин "Обои" Витебск</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header>
+  	<div class="name">Магазин &quot;Обои&quot;</div>
+    <div class="address">
+    	<div>Наш адрес:</div>
+    	<div class="addr-details">Витебск, улица Замковая, 21/30</div>
+        <div class="addr-details">Витебск, Полоцкий рынок, ролет 107</div>
+        <div class="addr-details">Телефон: моб. +375-29-711-33-48</div>
+    </div>
+  </header>
+  <div class="separator"></div>
+  <hr/>
+  <!-- About Section -->
+  <div class="main-body">
+  	  <section class="photo w3-display-container w3-animate-opacity">
+        <img class="mySlides" src="images\exterior\IMG_9274web.jpg">
+        <img class="mySlides" src="images\exterior\IMG_9273web.jpg">
+        <img class="mySlides" src="images\interior\IMG_9283web.jpg">
+        <img class="mySlides" src="images\interior\IMG_9282web.jpg">
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+        </script>
+
+      </section>
+      <section class="about" id="about">
+        <h2>О нас</h2>
+        <p class="text_column">Большой выбор - более 200 видов обоев!</p>
+        <p class="text_column">Доступная цена</p>
+        <p class="text_column">Акции!</p>
+        <h2>Наш ассортимент</h2>
+        <ul>
+	        <li>Обои</li>
+    	    <li>Самоклеящаяся пленка</li>
+	        <li>Фотобои</li>
+	        <li>Клея</li>
+        </ul>
+      </section>
+  </div>
+  <div class="separator"/>
+  <!-- More Info Section -->
+  <footer>
+  	<div class="copyright">&copy;2017 - <strong>Beloboi</strong></div>
+  </footer>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
